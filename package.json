@@ -117,6 +117,11 @@
     },
     "drizzle-kit": {
       "esbuild": "0.25.0"
+    },
+  "scripts": {
+    "db:generate": "npx drizzle-kit generate --config=drizzle.config.ts",
+    "db:migrate": "npx drizzle-kit migrate --config=drizzle.config.ts",
+    "db:push": "npx drizzle-kit push --config=drizzle.config.ts"
     }
   }
 }
